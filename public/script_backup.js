@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const addMessageToChatbox = (text, sender) => {
     const messageElement = document.createElement('div');
     // Use class names from style.css
-    messageElement.className = `message ${sender}`;
+    messageElement.className = `chat-message ${sender}`;
     messageElement.textContent = text;
     chatBox.appendChild(messageElement);
     // Scroll to the bottom of the chat box
